@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Sito sui form</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <font face="Verdana">
+      <h2>Iscriviti sul nostro sito!</h2>
+      <form name="candidazione" method="get" action="pagina che non esiste.php">
+        <p>Cognome: <input type="text" name="cognome" maxlength="25" placeholder="Inserisci il cognome"/></p>
+        <p>Nome: <input type="text" name="nome" maxlength="25" placeholder="Inserisci il nome"/></p>
+        <p>Sesso: 
+          <input type="radio" name="sesso"/> Maschio
+          <input type="radio" name="sesso"/> Femmina
+          <input type="radio" name="sesso"/> Altro
+        </p></p>
+        <p>Nome utente: <input type="text" name="utente" maxlength="25" placeholder="Inserisci un nome utente"/></p>
+        <p>Password: <input type="password" name="password" maxlength="25" placeholder="Password molto sicura"/></p>
+        <p>Motivazioni:</p>
+        <textarea name="motivazioni" rows="5" cols="25" wrap="hard" placeholder="Motivazioni"></textarea>
+        <p>Eta: 
+          <input type="radio" name="eta"/> 0-17
+          <input type="radio" name="eta"/> 18-35
+          <input type="radio" name="eta"/> 36-54
+          <input type="radio" name="eta"/> 55+
+        </p>
+        <input type="submit" value="Inviare"/>
+      </form>
+    </font>
+  </body>
+</html>
