@@ -1,0 +1,19 @@
+h1
+{
+  color: navy;
+  font-family: Verdana, Arial;
+}
+
+p
+{
+  color: #123456;
+  text-align: justify;
+  font-size: 1em/1.5;
+  font-weight: bold;
+  font-style: italic;
+}
+
+div
+{
+  background-color: yellow;
+}
