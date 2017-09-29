@@ -34,3 +34,20 @@ h2
   color: #444444;
   font-family: Arial, Sans-Serif;
 }
+
+.titoloCategoria
+{
+  background-color: #cceee6;
+  color: #050;
+  font-weight: 200;
+  padding: 25px;
+  margin: 25px;
+  border: 1px solid black;
+  text-align: center;
+ // text-size: 50px;
+}
+
+.contenuto
+{
+  margin: 0px 25px;
+}
