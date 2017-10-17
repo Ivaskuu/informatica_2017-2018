@@ -1,0 +1,95 @@
+body
+{
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+#intestazione
+{
+  height: 15%;
+  width: 100%;
+  background-color: #8bc34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#intestazione h1
+{
+  margin-right: 15px;
+  font-size: 50px;
+  font-family: serif;
+}
+
+#navigazione
+{
+  display: table;
+  height: 4%;
+  width: 100%;
+  background-color: #33691e;
+}
+
+#navigazione a:link, a:visited
+{
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#navigazione a:hover
+{
+  color: #ffc107;
+}
+
+#navigazione #sel
+{
+  color: #ffc107;
+}
+
+#contenuto
+{
+  margin: 20px;
+}
+
+#clickbait
+{
+  background: #cd9;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#piatto
+{
+  background: #80cbc4;
+  padding: 20px;
+  text-align: center;
+  border: 1px dashed black;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#piatto:hover
+{
+  background: #ef9a9a;
+}
+
+#prezzo
+{
+  background: #123;
+  padding: 20px;
+  width: 100px;
+  margin: auto;
+  border: 1px solid black;
+  color: aliceblue;
+}
+
+a
+{
+  text-decoration: none;
+}
