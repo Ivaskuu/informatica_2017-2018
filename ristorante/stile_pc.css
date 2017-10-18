@@ -5,53 +5,103 @@ body
   background: #fff;
 }
 
-#intestazione
+#clickbait
 {
+  background-image: url(immagini/ristorante.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  color: white;
+  
   width: 100%;
   height: 100%;
-  background: url(immagini/ristorante.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  display: table;
-  text-align: center;
+  
+  display: flex;
 }
 
-#intestazione h1
+#ombra
 {
-  color: white;
-  display: table-cell;
-  vertical-align: middle;
-  background: rgba(0, 0, 0, 0.7);
-  font-family: serif;
-  font-size: 9em;
-}
-
-#navigazione
-{
-  display: table;
-  height: 4%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 5%;
   width: 100%;
-  background-color: #33691e;
 }
 
-#navigazione a:link, a:visited
+#clickbait h2
 {
-  text-decoration: none;
-  color: white;
-  font-family: sans-serif;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  font-size: 8em;
+  width: 7.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .1em solid white;
+
+  animation: typing 5s steps(15, end), blink-caret 1s step-end infinite;
 }
 
-#navigazione a:hover
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:16.3em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+#menu
+{
+  background: #3e2723;
+  color: white;
+  
+  width: 50%;
+  height: 10%;
+  
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 15px;
+  box-shadow: 0px 10px 50px 0px rgb(170, 170, 170);
+  
+  display: table;
+}
+
+#menu h2
+{
+  margin: 0px;
+  transition: 0.1s ease-in-out;
+}
+
+#menu h2:hover
 {
   color: #ffc107;
+  transition: 0.1s ease-in;
+  transform: scale(1.1);
 }
 
-#navigazione #sel
+#menu a:link, a:visited
+{
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#sel
 {
   color: #ffc107;
 }
@@ -59,13 +109,6 @@ body
 #contenuto
 {
   margin: 20px;
-}
-
-#clickbait
-{
-  padding: 20px;
-  text-align: center;
-  border: 1px solid black;
 }
 
 #piatto_insalata
