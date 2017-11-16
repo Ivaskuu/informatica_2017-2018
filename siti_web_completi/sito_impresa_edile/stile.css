@@ -1,0 +1,30 @@
+body
+{
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+nav
+{
+  
+}
+
+#lista_menu
+{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li
+{
+  display: inline-block;
+}
+
+#footer
+{
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 30px;
+}
