@@ -10,18 +10,22 @@
   
   <body>
     <nav>
+      <img id="logo_nav" src="img/skuu_logo_black.png">
+      
       <ul id="lista_menu">
-        <li><a href="#">Homepage</a></li>
-        <li><a href="#">Chi siamo</a></li>
-        <li><a href="#">Galleria</a></li>
-        <li><a href="#">Contatto</a></li>
+        <li class="li_nav"><a href="#">Homepage</a></li>
+        <li class="li_nav"><a href="#">Chi siamo</a></li>
+        <li class="li_nav"><a href="#">Galleria</a></li>
+        <li class="li_nav"><a href="#">Contatto</a></li>
       </ul>
     </nav>
     
-    <div class="immagine">
-      <img src="img/cantiere_tramonto.jpg">
-      <h1>Skuu constructions</h1>
-      <p>Il mondo di domani si costruisce adesso</p>
+    <div id="img1">
+      <div class="ombra"/>
+      <div class="txt_img">
+        <h1 style="font-size: 6em; margin: 0px;">Skuu constructions</h1>
+        <p style="font-size: 2em;">Perché il mondo di domani si costruisce oggi.</p>
+      </div>
     </div>
     
     <div class="card">
@@ -29,9 +33,16 @@
       <p>Siamo un'impresa molto seria, e il nostro obiettivo è offrire un'esperienza indimenticabile.</p>
     </div>
     
-    <div class="immagine">
-      <img src="img/cantiere_tramonto.jpg">
-      <div id="card_contatto"/>
+    <div id="img2">
+      <div class="ombra"/>
+      <div class="txt_img">
+        <h1 style="font-size: 6em; margin: 0px;">Sgancia sto email fra, è roba buona</h1>
+        
+        <form name="email" method="get" action="google.com">
+          <input type="email" id="textbox_email" placeholder="Il tuo indirizzo email">
+          <input id="btn_submit" type="submit">
+        </form>
+      </div>
     </div>
     
     <div id="footer">
