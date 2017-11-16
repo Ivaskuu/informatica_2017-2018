@@ -1,0 +1,218 @@
+body
+{
+  margin: 0px;
+  font-family: sans-serif;
+  background: #fff;
+}
+
+#clickbait
+{
+  background-image: url(immagini/ristorante.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  color: white;
+  
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+}
+
+#ombra
+{
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 5%;
+  width: 100%;
+}
+
+#clickbait h2
+{
+  font-size: 7em;
+  text-align: left;
+}
+
+#menu
+{
+  background: #3e2723;
+  color: white;
+  
+  width: 80%;
+  height: 50%;
+  
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 15px;
+  box-shadow: 0px 10px 50px 0px rgb(170, 170, 170);
+  
+  display: table;
+}
+
+#menu h2
+{
+  margin: 0px;
+}
+
+#menu h2:hover
+{
+  margin-top: 20px;
+  color: #ffc107;
+}
+
+#menu a:link, a:visited
+{
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  
+  display: table-row;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#sel
+{
+  color: #ffc107;
+}
+
+#contenuto
+{
+  margin: 20px;
+}
+
+#piatto_insalata
+{
+  background-image: url(immagini/insalata-di-natale.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0px 10px 50px 0px rgb(170,170,170);
+  border-radius: 5px;
+  display: table;
+  transition: 0.2s ease-in-out;
+}
+
+#piatto_carne
+{
+  background-image: url(immagini/carne.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0px 10px 50px 0px rgb(170,170,170);
+  border-radius: 5px;
+  display: table;
+  transition: 0.2s ease-in-out;
+}
+
+#piatto_zuppa
+{
+  background-image: url(immagini/zuppa.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0px 10px 50px 0px rgb(170,170,170);
+  border-radius: 5px;
+  display: table;
+  transition: 0.2s ease-in-out;
+}
+
+#piatto_dessert
+{
+  background-image: url(immagini/dessert.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0px 10px 50px 0px rgb(170,170,170);
+  border-radius: 5px;
+  display: table;
+  transition: 0.2s ease-in-out;
+}
+
+#piatto_insalata:hover
+{
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+#piatto_carne:hover
+{
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+#piatto_zuppa:hover
+{
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+#piatto_dessert:hover
+{
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+#titolo_piatto
+{
+  font-size: 5em;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  transition: 0.2s ease-in-out;
+}
+
+#titolo_piatto:hover
+{
+  background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0);
+  display: table-cell;
+  vertical-align: middle;
+  transition: 0.2s ease-in-out;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+footer
+{
+  background: black;
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 240px;
+}
+
+#img_footer
+{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 100px;
+}
