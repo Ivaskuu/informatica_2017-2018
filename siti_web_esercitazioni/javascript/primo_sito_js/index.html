@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Il mio primo sito in JS</title>
+    <script type="application/javascript">
+      function alertWelcome(nome)
+      {
+        alert("Ciao, il tuo nome è " + nome + ".");
+      }
+      
+      function alertDataAtt()
+      {
+        var data = new Date();
+        var saludo = "";
+        var mese = "";
+        var mesi =
+        [
+          "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio",
+          "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
+        ];
+        
+        if(data.getHours() < 12) saludo = "Buona mattina";
+        else if(data.getHours() < 18) saludo = "Buon pomeriggio";
+        else saludo = "Bona sera";
+        
+        switch(data.getMonth())
+        {
+          case 0: mese = mesi[data.getMonth()]; break;
+          case 1: mese = mesi[data.getMonth()]; break;
+          case 2: mese = mesi[data.getMonth()]; break;
+          case 3: mese = mesi[data.getMonth()]; break;
+          case 4: mese = mesi[data.getMonth()]; break;
+          case 5: mese = mesi[data.getMonth()]; break;
+          case 6: mese = mesi[data.getMonth()]; break;
+          case 7: mese = mesi[data.getMonth()]; break;
+          case 8: mese = mesi[data.getMonth()]; break;
+          case 9: mese = mesi[data.getMonth()]; break;
+          case 10: mese = mesi[data.getMonth()]; break;
+          case 11: mese = mesi[data.getMonth()]; break;
+          case 12: mese = mesi[data.getMonth()]; break;
+          default: mese = "cos?"; break;
+        }
+        
+        alert
+        (
+          "Sono le ore " + data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds() + ".\n"
+          + "Quindi ti dico " + saludo + " !\n\n"
+          + "Siamo nel mese " + mese + " (" + (data.getMonth() + 1) + ")."
+        );
+      }
+    </script>
+  </head>
+  <body onload="alertDataAtt()">
+    <h1>Benvenuto !</h1>
+    <p>Vuoi sapere come ti chiami? Inserisci il tuo nome e clicca sul pulsante!</p>
+    <form>
+      
+    </form>
+  </body>
+</html>
