@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Il mio primo sito in JS</title>
+    <script type="application/javascript">
+      function es1()
+      {
+        var num1 = parseFloat(prompt("Inserisci il primo numero"));
+        var num2 = parseFloat(prompt("Inserisci il secondo numero"));
+
+        alert("Il risultato della divisione " + num1 + "/" + num2 + " è uguale a :\n\n" + (num1 / num2));
+
+        es2();
+      }
+      
+      function es2()
+      {
+        var num1 = parseInt(prompt("Inserisci il numero"));
+        num1 % 3 == 0 ? alert("Il numero " + num1 + " è un multiplo di 3.") : alert("Il numero " + num1 + " non è un multiplo di 3.");
+
+        es3();
+      }
+      
+      function es3()
+      {
+        var num1 = parseInt(prompt("Inserisci il numero"));
+        num1 % 2 == 0 ? alert("Il numero " + num1 + " è pari.") : alert("Il numero " + num1 + " è dispari.");
+
+        es4();
+      }
+      
+      function es4()
+      {
+        var somma = 0;
+
+        for(var i = 0; i < 3; i++)
+        {
+          var num;
+          do
+          {
+            num = parseInt(prompt("Inserisci il " + (i+1) + "^ numero (da 1 a 50)"));
+          }
+          while(num > 50 || num < 1);
+
+          somma += num;
+        }
+
+        if(somma > 90) alert("La somma è maggiore di 90 (" + somma + ") quindi ti devo restituire " + (somma - 90) + ".");
+        else if(somma < 90) alert("Manca " + (90 - somma) + " fino a 90 (" + somma + ").");
+        else alert("La somma dei numeri fa esattamente 90");
+
+        es5();
+      }
+      
+      function es5()
+      {
+        var nome = prompt("Ciao, come ti chiami ?");
+        var oreLav = parseInt(prompt("Quante ore hai lavorato, " + nome + " ?"));
+        var stipendio;
+
+        if(oreLav <= 160)
+        {
+          stipendio = oreLav * 16;
+        }
+        else
+        {
+          stipendio = oreLav * 16 + (160 - oreLav) * (16 * 1.25);
+        }
+
+        alert(nome + ", il tuo stipendio è di " + stipendio + " euro.");
+
+        es6();
+      }
+
+      function es6()
+      {
+        var nome = prompt("Ciao, come ti chiami ?");
+        var retOra;
+        var nOre;
+        var perc;
+        
+        do
+        {
+          retOra = parseFloat(prompt(nome + ", inserisci la sua retribuzione oraria"));
+        }
+        while(retOra <= 0);
+        
+        do
+        {
+          nOre = parseInt(prompt(nome + ", inserisci le ore"));   
+        }
+        while(nOre <= 0);
+        
+        do
+        {
+          perc = parseFloat(prompt(nome + ", inserisci la percentuale delle trattenute"));
+        }
+        while(perc < 0);            
+        
+        alert(nome + ", il tuo reddito lordo del è di " + (ret_oraria * nOre) + " euro.");
+        alert(nome + ", il tuo reddito netto del è di " + (ret_oraria * nOre) * (1 - (perc / 100)) + " euro.");
+      }
+    </script>
+  </head>
+  <body onload="es1()">
+    <h1>Ivascu Adrian</h1>
+  </body>
+</html>
